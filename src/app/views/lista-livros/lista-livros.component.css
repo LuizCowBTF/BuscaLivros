@@ -110,6 +110,8 @@ section button {
 
 .imagens {
   display: flex;
+  height: 100%;
+  margin-bottom: 50px;
 
   img {
     padding: 10px 0;
