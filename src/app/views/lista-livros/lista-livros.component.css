@@ -60,9 +60,7 @@ section p {
 }
 
 .mensagem-erro {
-  font-weight: bold;
-  font-size: 24px;
-  color: red;
+  color: #6C63FF;
 }
 
 input[type='search']:focus {
