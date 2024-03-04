@@ -4,8 +4,6 @@ section {
   flex-direction: column;
   align-items: center;
   min-height: 100%;
-  margin: 30px 0;
-  padding: 20px 0;;
 }
 
 header {
@@ -14,7 +12,7 @@ header {
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
-  margin-top: 4px;
+  margin-top: 76px;
   margin-bottom: 5px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   font-family: 'Poppins', sans-serif;
@@ -110,12 +108,6 @@ section button {
 
 .imagens {
   display: flex;
-  height: 100%;
-  margin-bottom: 50px;
-
-  img {
-    padding: 10px 0;
-  }
 }
 
 .ilustracao {

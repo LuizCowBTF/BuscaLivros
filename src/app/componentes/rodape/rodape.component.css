@@ -1,47 +1,20 @@
 footer {
   background-color: #050C42;
-  height: 150px;
+  height: 83px;
   width: 100%;
   bottom: 0;
   position: absolute;
   color: #FFFFFF;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-
-  a {
-    text-decoration: none;
-    font-style: none;
-    color: white;
-  }
-
-  a:visited {
-    text-decoration: none;
-    font-style: none;
-    color: white;
-  }
-
-  a:hover {
-    text-decoration: underline;
-    font-style: none;
-    color: orangered;
-  }
-
-  a:active {
-    text-decoration: none;
-    font-style: none;
-    color: green;
-  }
-
-  img {
-    margin: 20px 0;
-  }
 }
 
 span {
+  margin-right: 0.5rem;
+  margin-top: 0.75rem;
   font-size: 36px;
 }
 

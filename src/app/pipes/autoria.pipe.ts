@@ -7,8 +7,9 @@ export class AutoriaPipe implements PipeTransform {
 
   transform(autoria: string[]): string {
     if(autoria) {
-      return autoria[0];
+      return autoria[0]
     }
     return ''
   }
+
 }

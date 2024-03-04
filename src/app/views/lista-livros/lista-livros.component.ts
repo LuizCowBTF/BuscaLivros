@@ -1,8 +1,7 @@
-import { Component, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { Component, OnDestroy } from '@angular/core';
+import { LivroService } from 'src/app/service/livro.service';
 import { Item, Livro } from 'src/app/models/interfaces';
-import { LivroService } from 'src/app/services/livro.service';
-import { ImageLinks } from './../../models/interfaces';
 import { LivroVolumeInfo } from 'src/app/models/livroVolumeInfo';
 
 @Component({
@@ -10,11 +9,12 @@ import { LivroVolumeInfo } from 'src/app/models/livroVolumeInfo';
   templateUrl: './lista-livros.component.html',
   styleUrls: ['./lista-livros.component.css']
 })
-export class ListaLivrosComponent implements OnDestroy {
+export class ListaLivrosComponent implements OnDestroy{
+
   listaLivros: Livro[];
-  campoBusca: string = '';
-  subscription: Subscription;
-  livro: Livro;
+  campoBusca: string = ''
+  subscription: Subscription
+  livro: Livro
 
   constructor(private service: LivroService) { }
 
@@ -24,17 +24,20 @@ export class ListaLivrosComponent implements OnDestroy {
         this.listaLivros = this.livrosResultadoParaLivros(items)
       },
       error: erro => console.error(erro),
-    });
+    }
+    )
   }
 
   livrosResultadoParaLivros(items: Item[]): LivroVolumeInfo[] {
     return items.map(item => {
-      return new LivroVolumeInfo(item);
-    });
+      return new LivroVolumeInfo(item)
+    })
   }
 
   ngOnDestroy() {
-    this.subscription.unsubscribe();
+    this.subscription.unsubscribe()
   }
-
 }
+
+
+
