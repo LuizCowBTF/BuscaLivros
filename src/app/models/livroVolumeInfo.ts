@@ -13,7 +13,7 @@ export class LivroVolumeInfo {
     this.title = item.volumeInfo?.title,
     this.authors = item.volumeInfo?.authors,
     this.publisher = item.volumeInfo?.publisher,
-    this.publishedDate = item.volumeInfo?.publishDate,
+    this.publishedDate = item.volumeInfo?.publishedDate,
     this.description = item.volumeInfo?.description,
     this.previewLink = item.volumeInfo?.previewLink,
     this.thumbnail = item.volumeInfo?.ImageLinks?.thumbnail
