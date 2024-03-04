@@ -1,7 +1,7 @@
-import { Subscription, map, switchMap } from 'rxjs';
-import { Component, OnDestroy } from '@angular/core';
+import { map, switchMap, tap } from 'rxjs';
+import { Component } from '@angular/core';
 import { LivroService } from 'src/app/service/livro.service';
-import { Item, Livro } from 'src/app/models/interfaces';
+import { Item } from 'src/app/models/interfaces';
 import { LivroVolumeInfo } from 'src/app/models/livroVolumeInfo';
 import { FormControl } from '@angular/forms';
 
@@ -10,18 +10,17 @@ import { FormControl } from '@angular/forms';
   templateUrl: './lista-livros.component.html',
   styleUrls: ['./lista-livros.component.css']
 })
-export class ListaLivrosComponent implements OnDestroy{
+export class ListaLivrosComponent {
 
-  listaLivros: Livro[];
   campoBusca = new FormControl();
-  subscription: Subscription
-  livro: Livro
 
   constructor(private service: LivroService) { }
 
   livrosEncontrados$ = this.campoBusca.valueChanges
     .pipe(
+      tap(() => console.log('Fluxo Inicial')),
       switchMap((valorDigitado) => this.service.buscar(valorDigitado)),
+      tap(() => console.log('Requisições')),
       map((items) => this.livrosResultadoParaLivros(items))
     );
 
@@ -29,10 +28,6 @@ export class ListaLivrosComponent implements OnDestroy{
     return items.map(item => {
       return new LivroVolumeInfo(item)
     })
-  }
-
-  ngOnDestroy() {
-    this.subscription.unsubscribe()
   }
 }
 
