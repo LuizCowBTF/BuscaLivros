@@ -1,20 +1,25 @@
 footer {
   background-color: #050C42;
-  height: 83px;
+  height: 183px;
   width: 100%;
   bottom: 0;
+  margin-top: 10px;
   position: absolute;
   color: #FFFFFF;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
+
+  img {
+    padding: 20px 0;
+  }
 }
 
 span {
-  margin-right: 0.5rem;
-  margin-top: 0.75rem;
+  margin-top: 10px;
   font-size: 36px;
 }
 
