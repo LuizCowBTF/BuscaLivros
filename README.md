@@ -2,7 +2,7 @@
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white) ![JSON](https://img.shields.io/badge/JSON-black?style=for-the-badge&logo=JSON%20web%20tokens) ![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![ANGULAR](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white) ![RxJs](https://img.shields.io/badge/RxJs-404D59?style=for-the-badge)
 
-## Aplicativo para pesquisas e buscas de livros baseado na API GOOGLE BOOKS e Angular
+## Aplicativo para pesquisas e buscas de livros baseado na API GOOGLE BOOKS e Angular na versão 15.
 
 ### O Busca Livros é uma aplicativo que faz pesquisas e buscas de livros na API GOOGLE BOOKS.
 
